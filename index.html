@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/base.less">
+    <link rel="stylesheet/less" href="css/index.less">
+    <script src="js/less.js"></script>
+</head>
+<body>
+<!--==========================头部=======================-->
+<div id="header" class="clearfix">
+    <div class="logo">
+        <a href="javascript:;">
+            <h1>慢慢买</h1>
+            <img src="images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="app_download">
+        <a href="javascript:;">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</div>
+<!--========================头部结束=====================-->
+<!--==========================搜索=======================-->
+<div id="search">
+    <form action="" class="form_search">
+        <input type="text" placeholder="请输入您选择的商品">
+        <input type="button" value="搜索">
+    </form>
+</div>
+<!--========================搜索结束=====================-->
+<!--==========================菜单=======================-->
+<div id="menu" class="clearfix">
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>更多</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+    <div class="item col-xs-3">
+        <a href="javascript:;">
+            <img src="images/ic_search.png" alt="">
+            <p>比价搜索</p>
+        </a>
+    </div>
+</div>
+<!--=======================菜单结束=======================-->
+<!--==========================折扣=======================-->
+<div id="discount" class="clearfix">
+    <div class="discount-title">
+        <span>超值折扣推荐</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+    </div>
+    <div class="discount-product">
+        <div class="media">
+            <div class="media-left">
+                <a href="javascript:;">
+                    <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    "移动端凑单品：海天 鲜味 生抽 1.28L"
+                    <span>10.9</span>
+                </h4>
+                <div class="other clearfix">
+                    <div class="other-shop">10-25 14:10</div>
+                    <div class="other-talk">有1人评论</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="discount-more">
+        <a href="javascript:;">更多优惠信息</a>
+    </div>
+</div>
+<!--=======================折扣结束======================-->
+<!--=======================底部==========================-->
+<div id="footer">
+    <div class="login-top">
+        <div class="login">
+            <a href="javascript:;">登入</a>
+        </div>
+        <div class="resgiter">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="goTop">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+            <a href="javascript:;">返回顶部</a>
+        </div>
+    </div>
+    <div class="login-bottom">
+        <div class="p-top">
+            <span>手机APP下载</span>
+            <span>慢慢买手机版</span>
+            <span>掌上比价平台</span>
+            <p> m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+<!--=======================尾部结束======================-->
+
+<!--=======================渲染数据======================-->
+<!--========================menu========================-->
+<script type="text/html" id="menu-Product">
+{{each result as value index}}
+    <div class="item col-xs-3">
+        <a href="{{value.titlehref}}">
+            {{#value.img}}
+            <p>{{value.name}}</p>
+        </a>
+    </div>
+    {{/each}}
+</script>
+<!--======================discount=====================-->
+<script type="text/html" id="discount-product">
+    {{each result as value index}}
+    <div class="media">
+        <div class="media-left">
+            <a href="javascript:;">
+               {{#value.productImgSm}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">
+                {{value.productName}}
+                <span>{{value.productPinkage}}</span>
+            </h4>
+            <div class="other clearfix">
+                <div class="other-shop">{{value.productTime}}</div>
+                <div class="other-talk">{{value.productComCount}}</div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/index.js"></script>
+</html>
